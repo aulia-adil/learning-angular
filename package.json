@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "create-pipe": "ng generate pipe rupiah-transformer",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

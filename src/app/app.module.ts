@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {RupiahTransformerPipe} from "./shared/rupiah-transformer/rupiah-transformer.pipe";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RupiahTransformerPipe
   ],
   imports: [
     BrowserModule,
