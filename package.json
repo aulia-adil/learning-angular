@@ -5,16 +5,22 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "create-pipe": "ng generate pipe rupiah-transformer",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "create-module": "ng generate module quick-learner",
+    "create-component": "ng g c card",
+    "install-something": "ng add @angular/material"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.1.0",
+    "@angular/cdk": "~16.1.5",
     "@angular/common": "^16.1.0",
     "@angular/compiler": "^16.1.0",
     "@angular/core": "^16.1.0",
     "@angular/forms": "^16.1.0",
+    "@angular/material": "~16.1.5",
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
