@@ -3,11 +3,18 @@
   <div>
     <label>
       Name:
-<!--      on keyup event input text do fun()-->
       <input  type="text" formControlName="value" (keydown.enter)="fun($event)">
     </label>
 
   </div>
 </form>
 
-<h1>{{ result }}</h1>
+<h1 *ngIf="isNumeric(result); then thenBlock else elseBlock">{{ result }}</h1>
+
+<!--ng-template become h1-->
+<ng-template #thenBlock>
+  <h1>Number</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h3>Not a number</h3>
+</ng-template>

@@ -27,16 +27,19 @@ export class AppComponent {
     // if e target value is number, then console log "number"
     // else if e target value is string, then console log "string"
     // else console log "other"
+    this.result = e.target.value;
 
 
-    if (isNumeric(e.target.value)) {
-      this.result = 'number';
-    } else if (typeof e.target.value === 'string' && e.target.value !== '') {
-      this.result = 'string';
-    } else {
-      this.result = 'other';
-    }
+    // if (isNumeric(e.target.value)) {
+    //   this.result = 'number';
+    // } else if (typeof e.target.value === 'string' && e.target.value !== '') {
+    //   this.result = 'string';
+    // } else {
+    //   this.result = 'other';
+    // }
   }
+
+  protected readonly isNumeric = isNumeric;
 }
 
 function isNumeric(value: string) {
