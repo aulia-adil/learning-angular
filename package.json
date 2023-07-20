@@ -8,7 +8,7 @@
     "create-pipe": "ng generate pipe rupiah-transformer",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "create-module": "ng generate module quick-learner",
+    "create-module": "ng generate module calculator",
     "create-component": "ng g c card",
     "install-something": "ng add @angular/material"
   },

@@ -1,0 +1,7 @@
+
+<mat-form-field >
+  <mat-label>Insert the number here</mat-label>
+  <input matInput [formControl]="numberString" required>
+  <button mat-button type="submit" (click)="submitForm()">Submit</button>
+</mat-form-field>
+<h1>Result: {{numberString.value}}</h1>
