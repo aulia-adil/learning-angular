@@ -1,0 +1,8 @@
+<mat-toolbar *ngIf="!hideNavbar" color="primary">
+  <mat-toolbar-row class="navbar-right">
+    <span *ngFor="let navItem of navbarItems" class="nav-item">
+      <a>{{navItem}}</a>
+    </span>
+
+  </mat-toolbar-row>
+</mat-toolbar>
