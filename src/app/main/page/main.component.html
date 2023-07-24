@@ -1,1 +1,7 @@
-<p>main works!</p>
+<h1>{{location}}</h1>
+<h2>Tanggal: {{date}}</h2>
+
+<!--Make a list for sholat schedule-->
+<ul>
+    <li *ngFor="let sholatSchedule of sholatSchedules">{{sholatSchedule[0]}}: {{sholatSchedule[1]}}</li>
+</ul>

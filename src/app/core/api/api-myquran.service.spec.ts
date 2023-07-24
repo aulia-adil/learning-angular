@@ -18,10 +18,6 @@ describe('ApiMyquranService', () => {
     expect(service.getData).toBeTruthy();
   });
 
-  it('should have getData function return Promise', () => {
-    expect(service.getData(1, 2021, 1, 1) instanceof Promise).toBeTruthy();
-  });
-
   it('should have getData function JSON', async () => {
     // Get year, month, and date now
     const now = new Date();

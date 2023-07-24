@@ -10,8 +10,6 @@ export class ApiMyquranService {
   constructor() { }
 
   getData(city_id: number, year: number, month: number, date: number) {
-    return fetch(`${this._path}${city_id}/${year}/${month}/${date}`)
-      .then(res => res.json())
-      .then(res => res.data);
+    return `${this._path}${city_id}/${year}/${month}/${date}`
   }
 }
