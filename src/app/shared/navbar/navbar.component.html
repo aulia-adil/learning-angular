@@ -1,8 +1,7 @@
-<mat-toolbar *ngIf="!hideNavbar" color="primary">
+<mat-toolbar>
   <mat-toolbar-row class="navbar-right">
-    <span *ngFor="let navItem of navbarItems" class="nav-item">
-      <a>{{navItem}}</a>
-    </span>
-
+<!--    Create div with ngStyle that use background img-->
+    <div class="avatar" [ngStyle]="{'background-image': 'url(' + logo + ')'}" ></div>
+    <span>Adil</span>
   </mat-toolbar-row>
 </mat-toolbar>

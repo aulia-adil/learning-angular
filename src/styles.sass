@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+.avatar
+  /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+  //background-image: url('https://i.stack.imgur.com/Dj7eP.jpg')
+
+  // Make height follow the the parent div
+  height: 100%
+  aspect-ratio: 1 / 1
+
+
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover
+
+  /* center the image vertically and horizontally */
+  background-position: top center
+
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%
+
+// Make body heigth 100 screen vh
+.height-entire-screen
+  height: 100vh
+  display: block
+
+.footer
+  background-color: #f8f9fa
+  border-top: 1px solid #e9ecef
+  padding: 20px 0
+  text-align: center
+  // Position at least at the bottom of the page
+  // but not absolute
+  position: relative
+  // Make it stick to the bottom of the page
+  bottom: 0
+  // Make it span the entire width of the page
+  width: 100%
+// Make it span the entire width of the page
+// even if the page is smaller than the screen
+
+

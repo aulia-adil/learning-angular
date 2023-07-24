@@ -9,7 +9,7 @@ import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
 })
 export class NavbarComponent {
   navbarItems: string[] = [];
-  hideNavbar: boolean = false;
+  logo: string = 'assets/DSC_9824_copy.jpg';
 
   constructor(private _navbarItemsService: NavbarItemsService,
               private responsive: BreakpointObserver) {
@@ -17,14 +17,5 @@ export class NavbarComponent {
 
   ngOnInit(): void {
     this.navbarItems = this._navbarItemsService.getNavbarItems();
-    this.responsive.observe(
-      [Breakpoints.XSmall]).subscribe((state: any) => {
-        this.hideNavbar = false;
-
-        if (state.matches) {
-          this.hideNavbar = true;
-        }
-      }
-    );
   }
 }
