@@ -1,0 +1,11 @@
+<div class="carousel-container">
+  <button mat-icon-button (click)="previousSlide()">
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+  <div class="carousel-content" >
+    <div class="carousel-item" [@slideAnimation]="currentIndex" *ngFor="let item of carouselItems">{{ item }}</div>
+  </div>
+  <button mat-icon-button (click)="nextSlide()">
+    <mat-icon>chevron_right</mat-icon>
+  </button>
+</div>
