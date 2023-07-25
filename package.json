@@ -10,7 +10,7 @@
     "test": "ng test",
     "create-module": "ng generate module quick-learner",
     "create-component": "ng g c card",
-    "install-something": "ng add @angular/material"
+    "install-something": "ng add @ng-bootstrap/ng-bootstrap"
   },
   "private": true,
   "dependencies": {

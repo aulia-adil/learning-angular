@@ -1,1 +1,9 @@
+<!--<button mat-icon-button [@openClose]="isOpen ? 'open':'closed'" (click)="toggleState()">-->
+<!--  <mat-icon>chevron_right</mat-icon>-->
+<!--</button>-->
+
+<button [@move]="isOpen ? {value: 'forward', params: {testing: forwardValue}} : 'backward'" (click)="toggleState()">
+  <mat-icon>chevron_right</mat-icon>
+</button>
+
 <router-outlet></router-outlet>
