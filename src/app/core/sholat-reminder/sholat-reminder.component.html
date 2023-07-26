@@ -1,0 +1,27 @@
+<!--Give title directive-->
+<h1>{{location | titlecase }}</h1>
+<h2>Tanggal: {{date}}</h2>
+
+<!--Make a list for sholat schedule-->
+<ul>
+  <li>{{sholatSchedule[0]}}: {{sholatSchedule[1]}}</li>
+  <li>{{time}}</li>
+</ul>
+
+<mat-card class="card-class">
+  <mat-card-header class="flex-center">
+    <mat-card-title>{{location | titlecase }}</mat-card-title>
+    <mat-card-subtitle>{{date}}</mat-card-subtitle>
+  </mat-card-header>
+<!--  Create mat picture-->
+  <img mat-card-image class="sholar-reminder-image-class" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jakarta%2C_Capital_City_of_Indonesia2.jpg/375px-Jakarta%2C_Capital_City_of_Indonesia2.jpg">
+  <mat-card-content class="card-content">
+    <h2>{{time}}</h2>
+  </mat-card-content>
+  <mat-card-actions class="span-evenly">
+    <div class="flex-div">
+      <div class="flex-item-sholat-name">{{sholatSchedule[0] | titlecase}}</div>
+      <div class="flex-item">{{sholatSchedule[1]}}</div>
+    </div>
+  </mat-card-actions>
+</mat-card>
