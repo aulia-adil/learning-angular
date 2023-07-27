@@ -1,0 +1,7 @@
+<!--Create a form to upload image with angular material-->
+<form class="form-image-class" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input hidden (change)="onFileSelected($event,'image')" #fileInput type="file" id="file">
+  <button mat-raised-button color="primary" (click)="fileInput.click()" type="button">Choose File</button>
+  <span>{{fileName}}</span>
+  <button mat-raised-button type="submit">Upload</button>
+</form>
