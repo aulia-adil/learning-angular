@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-card-note',
@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-note.component.sass']
 })
 export class CardNoteComponent {
+  @Input() noteData: any | null = null;
 }

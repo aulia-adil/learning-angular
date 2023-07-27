@@ -1,4 +1,5 @@
-
-<app-card-note *ngFor="let x of [1,3,4,5]" class="app-card-note-class"></app-card-note>
+<div class="card-layout">
+<app-card-note class="app-card-note-class" *ngFor="let x of [1, 2, 3, 3, 4, 3, 4]" [noteData]="{'url': 'https://material.angular.io/assets/img/examples/shiba2.jpg'}"></app-card-note>
+</div>
 <app-form-image></app-form-image>
 
